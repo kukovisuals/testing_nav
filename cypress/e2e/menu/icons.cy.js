@@ -46,7 +46,6 @@ describe('2. Logo icon ', () => {
 
     cy.get($el)
       .should('be.visible');
-    cy.wait(1000);
   });
 
   it('Logo path should be  -> / ', () => {
