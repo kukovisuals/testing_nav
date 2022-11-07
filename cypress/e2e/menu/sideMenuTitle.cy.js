@@ -1,3 +1,5 @@
+/* Testing titles and links */
+
 const getIframeDocument = () => {
   return cy
   .get('iframe#attentive_creative')
@@ -249,6 +251,11 @@ describe('9. Reviews', () => {
     cy.get($rightEl)
       .eq(index)
       .should('have.attr', 'href', '/pages/reviews');
+  });
+
+  it('clicks', () => {
+    cy.get($el)
+      .contains('Reviews').click();
   });
 
 });
