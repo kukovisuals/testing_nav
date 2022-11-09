@@ -38,6 +38,7 @@ describe('1. Bralettes', () => {
 
   it(`Has item in cart with price $84`, () => {
     cy.get(price).then(list => {
+    cy.wait(3000);
       const newText = Cypress.$(list[0]).text()
 
       expect(newText).to.equal('$84');

@@ -5,9 +5,9 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
     // viewportWidth: 375,
     // viewportHeight: 667,
-    viewportWidth: 1024,
-    viewportHeight: 640,
-    baseUrl: 'https://ua4zxmhry56sxqf4-31340625964.shopifypreview.com/',
+    viewportWidth: 1309,
+    viewportHeight: 726,
+    baseUrl: 'https://eby-by-sofia-vergara.myshopify.com/',
 
   },
 });

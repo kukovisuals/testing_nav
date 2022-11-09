@@ -12,7 +12,7 @@ const getIframeBody = () => {
 }
 describe('Exit iframe', () => {
   it('exit from iframe if any',() => {
-    cy.visit('/products/must-have-cotton-bikini-pack');
+    cy.visit('/products/mystery-pack');
       getIframeBody().find('#closeIconContainer').should('have.class', 'css-upw05v').click();
   });
 });
@@ -21,7 +21,6 @@ describe('1. Bralettes', () => {
 
   it(`Adds 1 item to cart`, () => {
     cy.get('#AddToCart').click();
-    cy.wait(5000);
   }); 
    it(`Adds 2 item to cart`, () => {
     cy.get('#AddToCart').click();
@@ -36,12 +35,12 @@ describe('1. Bralettes', () => {
   const dataVid = 'data-vid';
 
 
-  it(`Has item in cart with price $84`, () => {
-    cy.get(price).then(list => {
+  it(`Has item in cart with price $36`, () => {
     cy.wait(3000);
+    cy.get(price).then(list => {
       const newText = Cypress.$(list[0]).text()
 
-      expect(newText).to.equal('$84');
+      expect(newText).to.equal('$36');
     })
   });
 });
