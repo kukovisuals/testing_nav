@@ -10,7 +10,7 @@ const getIframeBody = () => {
   .its('body').should('not.be.undefined')
   .then(cy.wrap);
 }
-const URL = '/collections/seamless-bra-packs?preview_theme_id=126410522668'
+const URL = '/collections/seamless-bra-packs?preview_theme_id=126421729324'
 describe('Exit iframe', () => {
   it('exit from iframe if any',() => {
     cy.visit(URL);
